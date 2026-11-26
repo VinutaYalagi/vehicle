@@ -24,7 +24,7 @@ def main():
 
     print("===== PARKING MANAGEMENT SYSTEM =====")
   
-
+    vehicle_number = input("Enter vehicle number")
     vehicle_type = input("Enter vehicle type (Two-wheeler / Four-wheeler / Heavy vehicle): ").lower()
 
     hours = float(input("Enter parking duration in hours: "))
@@ -36,7 +36,7 @@ def main():
     total_fee = calculate_parking_fee(vehicle_type, hours)
 
     print("\n===== PARKING RECEIPT =====")
-    
+    print("vehicle Number:",vehicle_number)
     print("Vehicle Type:", vehicle_type)
     print("Parking Duration:", hours, "hours")
     print("Total Parking Fee: Rs.", total_fee)
